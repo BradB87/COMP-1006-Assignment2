@@ -36,12 +36,12 @@ if (empty($email)) {
 	$pass = false;
 }
 
-if ((empty($password)) || ($password != $confirm)) {
+if ((empty($password && $confirm_password)) || ($password || $confirm_password != $confirm)) {
 	echo '<p> Password is invalid</P>';
 }
-// decide if we are saving or not
+// hash password
 if ($pass) {
-	$password = hash('sha512', $password);
+	$password = hash('sha512', $password, $confirm_password);
 
 }
 

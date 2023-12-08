@@ -1,4 +1,43 @@
-<?php require './inc/database.php';?>
+<?php require './inc/database.php';
+$sql="SELECT * FROM createUser";
+$result= $conn->query($sql);
+
+//create table 
+echo'section class= "people-row">';
+echo '<table class = "table-striped">;
+
+
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Confirm password</th>
+        </tr>';
+    foreach($result as $row){
+        echo '<tr>
+            <td> ' . $row['fname'] . '</td>
+            <td> ' . $row['lname'] . '</td>
+            <td> ' . $row['phone'] . '</td>
+            <td> ' . $row['email'] . '</td>
+            <td> ' . $row['password'] . '</td>
+            <td> ' . $row['confirm_password'] . '</td>
+        
+        </tr>';
+        echo '</table>';
+        echo '<a class= "btn btn-warning" href= "logout.php">logout</a>';
+
+        $conn=null;
+    }
+
+
+
+
+
+
+
+?>
 
 <?php
 $fname = $_POST['first name'];

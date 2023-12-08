@@ -18,7 +18,7 @@
             return $this->connection;
         }
     }
-$conn= mysqli_connect("localhost", "username", "password","database");
+$conn= mysqli_connect("host", "username", "password","database");
 
 
 
