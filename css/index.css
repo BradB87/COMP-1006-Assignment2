@@ -1,0 +1,67 @@
+
+h1 {
+    display: flex;
+    font-size: 32px;
+    color: blue;
+    margin-bottom: 10%;
+
+}
+
+h3 {
+    display: flex;
+
+    position: relative;
+    color: blue;
+}
+
+#greeting {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+/*parent1*/
+.form.row {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+/*child1*/
+/* div.col-sm-12-col-md-2col-lg-0 { */
+/*      */
+/*      */
+/*  */
+/* } */
+
+
+
+section.secondary-form {
+    display: flex;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+.form-label {
+    font-weight: 700;
+    color: black;
+
+}
+
+.form1 {
+    height: 400px;
+    width: 400px;
+    margin-left: 30%;
+    background-color: #0984e3;
+}
+
+
+button {
+    background-color: #74b9ff;
+
+
+}
+
+header {
+    background-color: slateblue;
+}
